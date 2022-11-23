@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { MainFacade } from 'src/core/application/facade/main.facade';
+import { Menu } from 'src/core/domain/entities/menu.entities';
 
 @Component({
   selector: 'app-menu',
@@ -6,10 +9,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  
+  private router: Router;
 
-  constructor() { }
+  private mainFacade!: MainFacade;
+  private menus : Menu[] = [];
 
-  ngOnInit(): void {
+  constructor(
+      mainFacade: MainFacade,
+      router: Router
+      
+      ){
+      this.mainFacade = mainFacade;
+      this.router = router;
   }
+  ngOnInit(): void {
+      this.menus = this.mainFacade.getAllMenus();
 
+      // TODO : definie route dynamically with Router of Anguler
+  }
 }
