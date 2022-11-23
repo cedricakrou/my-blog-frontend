@@ -7,6 +7,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { WorksComponent } from './works/works.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MenuComponent } from './common/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BrowserModule } from '@angular/platform-browser';
     ContactsComponent,
     ExperiencesComponent,
     ResumeComponent,
-    WorksComponent
+    WorksComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
