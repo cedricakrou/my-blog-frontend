@@ -3,11 +3,11 @@
  * 
  * KAKOU Akrou Cedric
  */
-export class Menu{
-    id:  | undefined;
-    label: string = "";
-    description: string = "";
+export interface Menu{
+    id: string  | undefined;
+    label: string;
+    description: string;
     order: number | undefined;
-    isVisible: boolean = true;
-    subMenus : Menu[] = [];
+    isVisible: boolean;
+    subMenus : Menu[];
 }

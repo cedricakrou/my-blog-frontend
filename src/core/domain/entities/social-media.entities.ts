@@ -3,9 +3,9 @@
  * 
  * KAKOU Akrou Cedric
  */
-export class SocialMedia{
+export interface SocialMedia{
     id: string | undefined;
-    label: string = "";
-    website: string = "";
-    isActive: boolean = false;
+    label: string;
+    link: string;
+    isActive: boolean;
 }
