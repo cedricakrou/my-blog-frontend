@@ -1,7 +1,11 @@
+import { Injectable } from "@angular/core";
 import { Observable, of } from "rxjs";
 import { SocialMediaRepository } from "src/core/application/repository/social-media.repository";
 import { SocialMedia } from "src/core/domain/entities/social-media.entities";
 
+@Injectable({
+    providedIn: 'root',
+})
 export class SocialMediaRepositoryMock implements SocialMediaRepository{
     
     findAll(): Observable<SocialMedia> {

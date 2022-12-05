@@ -1,7 +1,12 @@
+import { Injectable } from "@angular/core";
 import { Observable, of } from "rxjs";
 import { MenuRepository } from "src/core/application/repository/menu.repository";
 import { Menu } from "src/core/domain/entities/menu.entities";
+import { RouteNameHelper } from "src/presentation/features/common/routing/route-name.helper";
 
+@Injectable({
+    providedIn: 'root',
+})
 export class MenuRepositoryMock implements MenuRepository{
    
     findAll(): Observable<Menu> {
@@ -13,7 +18,8 @@ export class MenuRepositoryMock implements MenuRepository{
                 description: "Informations of user",
                 order: 0,
                 isVisible: true,
-                subMenus: []
+                subMenus: [],
+                link: RouteNameHelper.aboutMe
             };
 
 
@@ -23,34 +29,39 @@ export class MenuRepositoryMock implements MenuRepository{
                 description: "Experience of user",
                 order: 1,
                 isVisible: true,
-                subMenus: []
+                subMenus: [],
+                link: RouteNameHelper.experiences
             };
 
 
-    const works: Menu  = {
+        const works: Menu  = {
                 id: "3",
                 label: "Works",
                 description: "Works of user",
                 order: 2,
                 isVisible: true,
-                subMenus: []
+                subMenus: [],
+                link: RouteNameHelper.works
             };
         
-            const contact: Menu  =  {
+        const contact: Menu  =  {
                 id: "4",
-                label: "Contact",
-                description: "Contact of user",
-                order: 3,
-                isVisible: true,
-                subMenus: []
+            label: "Contact",
+            description: "Contact of user",
+            order: 3,
+            isVisible: true,
+            subMenus: [],
+            link: RouteNameHelper.contacts
             };
-            const resume: Menu = {
-                id: "5",
-                label: "Resume",
-                description: "Resume of user",
-                order: 4,
-                isVisible: true,
-                subMenus: []
+
+        const resume: Menu = {
+            id: "5",
+            label: "Resume",
+            description: "Resume of user",
+            order: 4,
+            isVisible: true,
+            subMenus: [],
+            link: RouteNameHelper.resume
             };
 
 

@@ -9,5 +9,6 @@ export interface Menu{
     description: string;
     order: number | undefined;
     isVisible: boolean;
+    link: string;
     subMenus : Menu[];
 }

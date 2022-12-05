@@ -4,21 +4,20 @@ import { MainFacade } from 'src/core/application/facade/main.facade';
 import { Menu } from 'src/core/domain/entities/menu.entities';
 
 @Component({
-  selector: 'app-menu',
+  selector: 'menu-component',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent implements OnInit {
   
   private router: Router;
 
   private mainFacade!: MainFacade;
-  private menus : Menu[] = [];
+  menus : Menu[] = [];
 
   constructor(
       mainFacade: MainFacade,
       router: Router
-      
       ){
       this.mainFacade = mainFacade;
       this.router = router;
