@@ -1,3 +1,13 @@
-<div *ngFor="let menu of menus">
-    <a [routerLink]=" '/' + menu.link">{{menu.label}}</a>
+<div class="row col-sm-12 col-md-12 col-lg-12">
+
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        test bootstrap
+    </div>
+
+    <div class="nava col-sm-12 col-md-6 col-lg-8">
+        <span class="col-sm-12 col-md-3 col-lg-4" *ngFor="let menu of menus">
+            <a [routerLink]=" '/' + menu.link">{{menu.label}}</a>
+        </span>
+    </div>
+
 </div>
