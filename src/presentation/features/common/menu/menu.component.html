@@ -1,12 +1,16 @@
-<div class="row col-sm-12 col-md-12 col-lg-12">
+<div id="menu" class="row col-sm-12 col-md-12 col-lg-12">
 
     <div class="col-sm-12 col-md-6 col-lg-4">
-        test bootstrap
+        
+        <img id="logo" class="col-sm-4 col-md-4 col-md-4" src="presentation/assets/logo.png" />
+        <span class="menu-text">cedricakrou@gmail.com</span>
+        <img id="light-mode" class="col-sm-4 col-md-4 col-md-4" src="presentation/assets/light-mode.png" />
     </div>
 
-    <div class="nava col-sm-12 col-md-6 col-lg-8">
+    <div class="menu-navbar col-sm-12 col-md-6 col-lg-8">
         <span class="col-sm-12 col-md-3 col-lg-4" *ngFor="let menu of menus">
-            <a [routerLink]=" '/' + menu.link">{{menu.label}}</a>
+            <span class="menu-item-prefix">{{menu.order}}.</span>
+            <a class="menu-item-text" [routerLink]=" '/' + menu.link">{{menu.label}}</a>
         </span>
     </div>
 

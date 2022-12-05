@@ -8,4 +8,5 @@ export interface SocialMedia{
     label: string;
     link: string;
     isActive: boolean;
+    imageUrl: string;
 }

@@ -1,0 +1,11 @@
+.social-media-item{
+    height: 22px;
+    width: 22px;
+    margin-top: 15px;
+}
+
+.social-media-item:hover{
+    height: 26px;
+    width: 26px;
+    filter: brightness(1000%) ;
+}

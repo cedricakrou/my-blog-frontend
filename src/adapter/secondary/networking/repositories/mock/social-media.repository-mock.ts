@@ -14,31 +14,35 @@ export class SocialMediaRepositoryMock implements SocialMediaRepository{
             {
                 id: "123",
                 label: "Github",
-                link: "http://",
+                link: "https://github.com/cedricakrou",
                 isActive: true,
+                imageUrl: "github.png",
             };
 
 
         const linkedIn : SocialMedia = {
                 id: "123",
                 label: "LinkedIn",
-                link: "http://",
+                link: "https://www.linkedin.com/in/kakou-akrou-cedric-052338162/",
                 isActive: true,
+                imageUrl: "linkedin.png"
             };
 
 
            const instagram : SocialMedia = {
                 id: "123",
                 label: "Instagram",
-                link: "http://",
+                link: "https://www.instagram.com/belmondok/",
                 isActive: true,
+                imageUrl: "instagram.png"
             }; 
 
             const twitter : SocialMedia = {
                 id: "123",
                 label: "Twitter",
-                link: "http://",
+                link: "https://twitter.com/cedricakrou2",
                 isActive: true,
+                imageUrl: "twitter.png"
             }; 
 
         
