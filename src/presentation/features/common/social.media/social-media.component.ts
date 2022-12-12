@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { MainFacade } from "src/core/application/facade/main.facade";
 import { SocialMedia } from "src/core/domain/entities/social-media.entities";
+declare var $: any; 
 
 @Component({
     selector: 'social-media-component',
@@ -19,5 +20,9 @@ export class SocialMediaComponent implements OnInit {
 
     ngOnInit(): void {
         this.socialMedias = this.mainFacade.getAllSocialMedias();
+    }
+
+    designSvgIcon(imageDraw : string): string {
+        return "<path d='" + imageDraw + "'></path>";
     }
 } 

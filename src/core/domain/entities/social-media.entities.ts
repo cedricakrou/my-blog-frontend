@@ -9,4 +9,5 @@ export interface SocialMedia{
     link: string;
     isActive: boolean;
     imageUrl: string;
+    imageDraw: string
 }

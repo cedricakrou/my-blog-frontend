@@ -7,5 +7,21 @@
 .social-media-item:hover{
     height: 26px;
     width: 26px;
-    filter: brightness(1000%) ;
+}
+
+svg{
+    fill: none;
+    stroke: aliceblue;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 1s;
+}
+
+svg.feater{
+    fill: none;
+}
+
+svg:hover{
+    stroke: #58FFDB;
 }

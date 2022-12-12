@@ -1,5 +1,9 @@
 <div *ngFor="let socialMedia of socialMedias">
     <a *ngIf="socialMedia.isActive" [href]="socialMedia.link" target="_blank">
-        <img class="social-media-item" [src]=" 'presentation/assets/social.media/' + socialMedia.imageUrl" [alt]="socialMedia.label" />
+
+        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" [class]="socialMedia.imageUrl  + ' social-media-item'">
+            <title>{{socialMedia.label}}</title>
+            <path [attr.d]="socialMedia.imageDraw"></path>
+        </svg>
     </a> 
 </div>
