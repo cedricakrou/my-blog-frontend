@@ -23,5 +23,5 @@ svg.feater{
 }
 
 svg:hover{
-    stroke: #58FFDB;
+    stroke: var(--accent-color);
 }

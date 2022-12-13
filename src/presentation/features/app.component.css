@@ -1,12 +1,28 @@
 #website-body{
     height: 100%;
     width: 100%;
-    background-color: #09192E;
+    background-color: var(--body-color);
+    font-family: var(--body-font-family);
+    font-size: 18px;
 }
 
 #social-media-section{
     margin-left: 1%;
-    position: relative;
+    position: fixed;
     margin-top: 20%;
     transform: translateY(-50%);
+}
+
+
+#page-section{
+    padding-top: 5%;
+    vertical-align: middle;
+    text-align: justify;
+    padding-left: 10%;
+}
+
+#menu-section{
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 5%;
 }

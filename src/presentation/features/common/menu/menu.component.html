@@ -1,17 +1,15 @@
-<div id="menu" class="row col-sm-12 col-md-12 col-lg-12">
+<div id="menu" class="row">
 
-    <div class="col-sm-12 col-md-6 col-lg-4">
-        
-        <img id="logo" class="col-sm-4 col-md-4 col-md-4" src="presentation/assets/logo.png" />
+    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <img id="logo" src="presentation/assets/logo.png" />
         <span class="menu-text">cedricakrou@gmail.com</span>
-        <img id="light-mode" class="col-sm-4 col-md-4 col-md-4" src="presentation/assets/light-mode.png" />
+        <img id="light-mode" src="presentation/assets/light-mode.png" />
     </div>
 
-    <div class="menu-navbar col-sm-12 col-md-6 col-lg-8">
-        <span class="col-sm-12 col-md-3 col-lg-4" *ngFor="let menu of menus">
+    <div class="row col-sm-12 col-md-12 col-lg-6 col-xl-6 menu-navbar">
+        <span class="col-sm-6 col-md-6 col-lg-6 col-xl-2 menu-item"  *ngFor="let menu of menus">
             <span class="menu-item-prefix">{{menu.order}}.</span>
             <a class="menu-item-text" [routerLink]=" '/' + menu.link">{{menu.label}}</a>
         </span>
     </div>
-
 </div>

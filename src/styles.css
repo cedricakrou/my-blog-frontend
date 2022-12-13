@@ -1,2 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+:root{
+    --primary-color: #09192E;
+    --accent-color: #58FFDB;
+    --gray-light-color: #ccd6f6;
+    --gray-sky-color: #8892b0;
+    --body-color: var(--primary-color);
+    --body-font-family: 'Courier New', Courier, monospace;
+}

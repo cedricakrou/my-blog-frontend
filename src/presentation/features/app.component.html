@@ -1,9 +1,19 @@
 <div id="website-body">
-    <menu-component></menu-component> 
 
-    <div id="social-media-section">
-        <social-media-component></social-media-component>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="menu-section">
+            <menu-component></menu-component>
+        </div>
     </div>
-    
-    <router-outlet></router-outlet>
+
+    <div class="row">
+
+        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1" id="social-media-section">
+            <social-media-component></social-media-component>
+        </div>
+        
+        <div id="page-section" class="col-sm-10 col-md-10 col-lg-10">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>

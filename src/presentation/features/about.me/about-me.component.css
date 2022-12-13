@@ -1,0 +1,137 @@
+.btn-contact-me{
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    text-decoration-line: var(--accent-color);
+    border-width: 1px;
+    border-color: var(--accent-color);
+    border-style: solid;
+    border-radius: 10px 5px ;
+    padding: 12px;
+}
+
+.btn-contact-me:hover{
+    background-color: rgba(100,255,218,0.1);
+}
+
+#short-presentation-section{
+    height: 25%;
+    vertical-align: middle;
+}
+
+.short-presentation-my-name{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--gray-light-color);
+}
+
+.short-presentation-title{
+    color: var(--accent-color);
+    font-size: 25px;
+}
+
+.short-presentation-subtitle{
+    color: var(--gray-light-color);
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.short-presentation-job-description{
+    color: var(--gray-sky-color);
+    font-size: 16px;
+}
+
+
+#services-section{
+    margin-top: 100px;
+}
+
+#services-section-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+#services-section-subtitle{
+    font-size: 20px;
+    color: var(--gray-light-color);
+}
+
+.services-item-section{
+    margin-bottom: 5%;
+}
+
+.services-item-header{
+    margin-bottom: 1%;
+}
+
+.services-item-header-content{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+.services-item-image{
+    border-radius: 25px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.services-item-header-number{
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.services-item-header-content{
+    color: white;
+    font-size: 18px;
+}
+
+.services-item-content{
+    color: white;
+    vertical-align: middle;
+    padding-top: 7%;
+}
+
+.bottom-block{
+    position: absolute;
+    top: 75%;
+    left: 80%;
+}
+
+.floating-bottom{
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+    height: 72px;
+    width: 72px;
+}
+
+#scroll-bottom-text{
+    font-size: 35px;
+    fill: var(--accent-color);
+}
+
+.floating-bottom:hover{
+    padding: 20px;
+    background-color: var(--accent-color); 
+    transform: translate(20px, 50%);
+}
+
+.services-section-divider {
+    border: none;
+    border-top: 3px double var(--accent-color);
+    color: var(--accent-color);
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.services-section-divider:after {
+    background: var(--primary-color);
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
