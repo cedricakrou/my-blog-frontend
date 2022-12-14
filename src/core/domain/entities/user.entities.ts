@@ -2,20 +2,24 @@ import { Address } from "../valueobjects/address.value-object";
 import { Role } from "../valueobjects/role.value-object";
 import { Experience } from "./experience.entities";
 import { Menu } from "./menu.entities";
+import { ServiceEntity } from "./service.entities";
+import { SocialMedia } from "./social-media.entities";
 
 /**
- * Entitie domain of User.
+ * Entity domain of User.
  * 
  * KAKOU Akrou Cedric
  */
-export class User{
-    id: string | undefined;
-    firstname: string = "";
-    lastname: string = "";
-    email: string = "";
-    phone: string = "";
-    address: Address | undefined;
-    role: Role | undefined;
-    menus: Menu[] = [];
-    experiences: Experience[] = [];
+export interface User{
+    id: string;
+    firstname: string;
+    lastname: string;
+    email: string;
+    phone: string[];
+    address: Address;
+    role: Role;
+    menus: Menu[];
+    experience: Experience[];
+    socialMedias: SocialMedia[];
+    services: ServiceEntity[];
 }

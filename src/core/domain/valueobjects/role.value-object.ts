@@ -3,8 +3,8 @@
  * 
  * KAKOU Akrou Cedric
  */
-export class Role{
-    id: String | undefined;
-    label: String = "";
-    
+export interface Role{
+    id: String;
+    label: String;
+    permissions: Permissions[];
 }

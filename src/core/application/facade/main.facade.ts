@@ -7,26 +7,51 @@ import { SocialMediaRepository } from "src/core/application/repository/social-me
 import { Menu } from "src/core/domain/entities/menu.entities";
 import { ServiceEntity } from "src/core/domain/entities/service.entities";
 import { SocialMedia } from "src/core/domain/entities/social-media.entities";
+import { User } from "src/core/domain/entities/user.entities";
 import { ServiceRepository } from "../repository/service.repository";
+import { UserService } from "../services/user.service";
+import { UserRepository } from "../repository/user.repository";
+import { UserRepositoryMock } from "src/adapter/secondary/networking/repositories/mock/user.repository-mock";
 
 @Injectable({
     providedIn: 'root',
 })
-export class MainFacade {
+export class MainFacade implements UserService {
     
+    private userRepository: UserRepository;
     private socialMediaRepository!: SocialMediaRepository;
     private menuRepository!: MenuRepository;
     private serviceRepository!: ServiceRepository;
 
     constructor(
+        userRepository: UserRepositoryMock,
         menuRepository: MenuRepositoryMock,
         socialMediaRepository: SocialMediaRepositoryMock,
         serviceRepository: ServiceRepositoryMock){
+        this.userRepository = userRepository;
         this.menuRepository = menuRepository;
         this.socialMediaRepository = socialMediaRepository;
         this.serviceRepository = serviceRepository;
     }
 
+    signIn(username: string, password:string): User {
+
+        var user!: User;
+
+        this.userRepository.signIn(username, password).subscribe({
+            next(value: User): void {
+              user = value;
+            },
+            error(err: Error) : void{
+                throw new Error("Error while loading menus !");
+            }
+        })
+        
+
+        return user; 
+    }
+
+    
     getAllMenus(): Menu[] {
         
         var menus: Menu[] = [];

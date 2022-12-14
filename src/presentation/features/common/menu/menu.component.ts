@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MainFacade } from 'src/core/application/facade/main.facade';
 import { Menu } from 'src/core/domain/entities/menu.entities';
+import { SharedPreferences } from 'src/presentation/helper/variable.global';
 
 @Component({
   selector: 'menu-component',
@@ -9,22 +10,10 @@ import { Menu } from 'src/core/domain/entities/menu.entities';
   styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent implements OnInit {
-  
-  private router: Router;
 
-  private mainFacade!: MainFacade;
   menus : Menu[] = [];
 
-  constructor(
-      mainFacade: MainFacade,
-      router: Router
-      ){
-      this.mainFacade = mainFacade;
-      this.router = router;
-  }
   ngOnInit(): void {
-      this.menus = this.mainFacade.getAllMenus();
-
-      // TODO : definie route dynamically with Router of Anguler
+      this.menus = SharedPreferences.user.menus;
   }
 }
