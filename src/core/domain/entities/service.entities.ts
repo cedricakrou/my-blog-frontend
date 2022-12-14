@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from 'uuid'
  * KAKOU Akrou Cedric
  */
 export interface ServiceEntity{
-    id: any;
+    id: string;
     order: number;
     title: string;
     description: string;

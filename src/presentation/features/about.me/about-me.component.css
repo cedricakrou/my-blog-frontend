@@ -56,6 +56,11 @@
     color: var(--gray-light-color);
 }
 
+.entreprise-description{
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
 .services-item-section{
     margin-bottom: 5%;
 }

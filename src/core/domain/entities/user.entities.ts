@@ -1,5 +1,6 @@
 import { Address } from "../valueobjects/address.value-object";
 import { Role } from "../valueobjects/role.value-object";
+import { Experience } from "./experience.entities";
 import { Menu } from "./menu.entities";
 
 /**
@@ -16,4 +17,5 @@ export class User{
     address: Address | undefined;
     role: Role | undefined;
     menus: Menu[] = [];
+    experiences: Experience[] = [];
 }
