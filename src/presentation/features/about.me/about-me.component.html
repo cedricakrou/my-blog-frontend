@@ -1,17 +1,15 @@
 <div id="short-presentation-section">
     <p class="short-presentation-title">Je suis</p>
     <p class="short-presentation-my-name">{{user.lastname}} {{user.firstname}}</p>
-    <p class="short-presentation-subtitle">{{user.briefDescription}}>
-    <p class="short-presentation-job-description">
-        {{user.workDescription}}
-    </p>
+    <p class="short-presentation-subtitle">{{user.briefDescription}}</p>
+    <p class="short-presentation-job-description">{{user.workDescription}}</p>
     <p class="short-presentation-currently-job">
         Actuellement, je suis en poste à <a target="_blank" class="entreprise-description" [href]="user.currentJob.companyLink">{{user.currentJob.companyName}}</a> 
         en qualité <span id="current-job-title">{{user.currentJob.title}}</span>.
         <span id="current-job-assignment">{{user.currentJob.description}}</span> 
     </p>
 
-    <a href="mailto:cedricakroustudo@gmail.com" target="_blank">
+    <a [href]="'mailto:' + user.email" target="_blank">
         <button class="btn-contact-me">
             Contactez moi !
         </button>

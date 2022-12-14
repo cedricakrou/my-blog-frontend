@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';;
 import { Menu } from 'src/core/domain/entities/menu.entities';
+import { User } from 'src/core/domain/entities/user.entities';
 import { SharedPreferences } from 'src/presentation/helper/variable.global';
 
 @Component({
@@ -9,11 +10,10 @@ import { SharedPreferences } from 'src/presentation/helper/variable.global';
 })
 export class MenuComponent implements OnInit {
 
-  menus : Menu[] = [];
+  user!: User;
 
   ngOnInit(): void {
-      this.menus = SharedPreferences.user.menus
-      this.menus.sort(this.compare);
+      this.user = SharedPreferences.user;
   }
 
   compare( a: Menu , b: Menu){

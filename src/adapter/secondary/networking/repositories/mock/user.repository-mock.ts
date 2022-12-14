@@ -33,7 +33,7 @@ export class UserRepositoryMock implements UserRepository{
             id: uuidv4(),
             firstname : "Akrou Cedric",
             lastname: "KAKOU",
-            email: "cedricakrou@gmail.com",
+            email: "cedricakroustudy@gmail.com",
             phone: ["+2250709882886", "+22540746469"],
             address: address,
             role: role,
