@@ -1,9 +1,14 @@
 <div id="short-presentation-section">
     <p class="short-presentation-title">Je suis</p>
-    <p class="short-presentation-my-name">KAKOU Akrou Cedric</p>
-    <p class="short-presentation-subtitle">Passioné de développement d'applications 💻 et Formula Ona (F1) Addicte 🏎️.</p>
-    <p class="short-presentation-job-description">Je suis un ingénieur génie logiciel specialisé dans la conception et la création de solutions (Web & Mobile) digitales.
-        Actuellement, je suis en poste à <a class="entreprise-description" href="https://cinetpay.com/">Cinetpay</a> en qualité d'ingenieur Web FullStack. Et je travaille sur le redesign du système d'informations de ladite entreprise.
+    <p class="short-presentation-my-name">{{user.lastname}} {{user.firstname}}</p>
+    <p class="short-presentation-subtitle">{{user.briefDescription}}>
+    <p class="short-presentation-job-description">
+        {{user.workDescription}}
+    </p>
+    <p class="short-presentation-currently-job">
+        Actuellement, je suis en poste à <a target="_blank" class="entreprise-description" [href]="user.currentJob.companyLink">{{user.currentJob.companyName}}</a> 
+        en qualité <span id="current-job-title">{{user.currentJob.title}}</span>.
+        <span id="current-job-assignment">{{user.currentJob.description}}</span> 
     </p>
 
     <a href="mailto:cedricakroustudo@gmail.com" target="_blank">
@@ -53,7 +58,7 @@
     <hr class="services-section-divider" />
 
 
-    <div class="services-item-section" *ngFor="let service of services">
+    <div class="services-item-section" *ngFor="let service of user.services">
         <div class="services-item-header">
             <span class="services-item-header-number">{{service.order}}.</span>  <span class="services-item-header-content">{{service.title}}</span>
         </div>

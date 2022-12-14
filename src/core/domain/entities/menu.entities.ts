@@ -4,10 +4,10 @@
  * KAKOU Akrou Cedric
  */
 export interface Menu{
-    id: string  | undefined;
+    id: string;
     label: string;
     description: string;
-    order: number | undefined;
+    order: number;
     isVisible: boolean;
     link: string;
     subMenus : Menu[];

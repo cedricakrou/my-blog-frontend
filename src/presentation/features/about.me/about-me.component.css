@@ -35,7 +35,7 @@
     line-height: 1.4;
 }
 
-.short-presentation-job-description{
+.short-presentation-job-description, .short-presentation-currently-job{
     color: var(--gray-sky-color);
     font-size: 16px;
 }
