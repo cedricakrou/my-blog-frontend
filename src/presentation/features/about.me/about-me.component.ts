@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ServiceEntity } from "src/core/domain/entities/service.entities";
+import { User } from "src/core/domain/entities/user.entities";
 import { SharedPreferences } from "src/presentation/helper/variable.global";
 
 @Component({
@@ -9,10 +10,10 @@ import { SharedPreferences } from "src/presentation/helper/variable.global";
 })
 export class AboutMeComponent implements OnInit{
 
-    services!: ServiceEntity[];
+    user!: User;
 
     ngOnInit(): void {
-        this.services = SharedPreferences.user.services;
+        this.user = SharedPreferences.user;
     }
 
 }

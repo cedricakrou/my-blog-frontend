@@ -22,4 +22,7 @@ export interface User{
     experience: Experience[];
     socialMedias: SocialMedia[];
     services: ServiceEntity[];
+    briefDescription: string;
+    workDescription: string;
+    currentJob: Experience;
 }

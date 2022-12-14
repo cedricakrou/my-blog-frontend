@@ -10,11 +10,12 @@ export interface Experience{
     id: string;
     title: string;
     description: string;
-    employmenType: EmploymentType;
+    employmentType: EmploymentType;
     companyName: string;
+    companyLink: string;
     location: string;
     startDate: Date;
     startEnd: Date;
-    currentlyWorking: boolean;
+    isCurrentlyWorking: boolean;
     skills: Skill[];
 }
