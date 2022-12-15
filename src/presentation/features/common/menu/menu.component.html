@@ -1,12 +1,12 @@
 <div id="menu" class="row">
 
-    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+    <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
         <img id="logo" src="presentation/assets/logo.png" />
         <span class="menu-text">{{user.email}}</span>
         <img id="light-mode" src="presentation/assets/light-mode.png" />
     </div>
 
-    <div class="row col-sm-12 col-md-12 col-lg-6 col-xl-6 menu-navbar">
+    <div class="row col-sm-12 col-md-12 col-lg-7 col-xl-7 menu-navbar">
         <span class="col-sm-6 col-md-6 col-lg-6 col-xl-2 menu-item"  *ngFor="let menu of user.menus.sort(compare)">
             <span class="menu-item-prefix">{{menu.order}}.</span>
             <a class="menu-item-text" [routerLink]=" '/' + menu.link">{{menu.label}}</a>

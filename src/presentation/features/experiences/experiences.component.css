@@ -1,0 +1,69 @@
+#experiences-section{
+    margin-top: 100px;
+}
+
+#experiences-section-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+#experiences-section-subtitle{
+    font-size: 20px;
+    color: var(--gray-light-color);
+}
+
+.experiences-item-section{
+    margin-bottom: 5%;
+}
+
+.experiences-item-header{
+    margin-bottom: 1%;
+}
+
+.experiences-item-header-content{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+.experiences-item-image{
+    border-radius: 25px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.experiences-item-header-number{
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.experiences-item-header-content{
+    color: white;
+    font-size: 18px;
+}
+
+.experiences-item-content{
+    color: white;
+    vertical-align: middle;
+    padding-top: 7%;
+}
+
+.experiences-section-divider {
+    border: none;
+    border-top: 3px double var(--accent-color);
+    color: var(--accent-color);
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.experiences-section-divider:after {
+    background: var(--primary-color);
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}

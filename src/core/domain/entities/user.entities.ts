@@ -19,7 +19,7 @@ export interface User{
     address: Address;
     role: Role;
     menus: Menu[];
-    experience: Experience[];
+    experiences: Experience[];
     socialMedias: SocialMedia[];
     services: ServiceEntity[];
     briefDescription: string;
