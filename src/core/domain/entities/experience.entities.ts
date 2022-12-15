@@ -11,8 +11,10 @@ export interface Experience{
     title: string;
     description: string;
     employmentType: EmploymentType;
+    order: number;
     companyName: string;
     companyLink: string;
+    companyImageUrl: string;
     location: string;
     startDate: Date;
     startEnd: Date;

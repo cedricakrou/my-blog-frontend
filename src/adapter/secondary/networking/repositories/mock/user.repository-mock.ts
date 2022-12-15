@@ -39,7 +39,7 @@ export class UserRepositoryMock implements UserRepository{
             role: role,
             menus: new MenuFakeData().datas(),
             socialMedias: new SocialMediaFakeData().datas(),
-            experience: new ExperienceFakeData().datas(),
+            experiences: new ExperienceFakeData().datas(),
             currentJob: new ExperienceFakeData().cinetpay,
             services: new ServiceFakeData().datas(),
             briefDescription: "Passioné de développement d'applications 💻 et Formula Ona (F1) Addicte 🏎️.",

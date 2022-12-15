@@ -1,0 +1,21 @@
+<div id="experiences-section">
+    <a id="experience-id"></a>
+    <p id="experiences-section-title">Qu'est-ce que je peux faire</p>
+    <p id="experiences-section-subtitle">Offres de experiences</p>
+    <hr class="experiences-section-divider" />
+
+
+    <div class="experiences-item-section" *ngFor="let experience of user.experiences">
+        <div class="experiences-item-header">
+            <span class="experiences-item-header-number">{{experience.order}}.</span>  <span class="experiences-item-header-content">{{experience.companyName}}</span>
+        </div>
+        <div class="row">
+            
+            <img class="col-sm-12 col-md-12 col-lg-4 col-xl-4 experiences-item-image" [src]=" 'presentation/assets/experiences/' + experience.companyImageUrl" [alt]="experience.title" />
+    
+            <p class="col-sm-12 col-md-12 col-lg-8 col-xl-8 experiences-item-content">
+                {{experience.description}}
+            </p>
+        </div>
+    </div>
+</div>
