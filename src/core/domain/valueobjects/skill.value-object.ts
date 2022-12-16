@@ -3,7 +3,7 @@
  * 
  * KAKOU Akrou Cedric
  */
-export class Skill{
-    id: string | undefined;
-    label: string = "";
+export interface Skill{
+    id: string;
+    label: string;
 }

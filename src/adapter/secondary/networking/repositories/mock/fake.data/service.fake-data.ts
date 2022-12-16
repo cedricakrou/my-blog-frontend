@@ -4,7 +4,7 @@ import { IFakeData } from "./fake-data";
 
 export class ServiceFakeData implements IFakeData<ServiceEntity> {
     
-    private softwareArchitecture: ServiceEntity = {
+    public softwareArchitecture: ServiceEntity = {
         id: uuidv4(),
         order: 1,
         title: "Software Architecture",
@@ -13,7 +13,7 @@ export class ServiceFakeData implements IFakeData<ServiceEntity> {
      
      };
      
-     private frontEndDevelopment: ServiceEntity = {
+     public frontEndDevelopment: ServiceEntity = {
          id: uuidv4(),
          order: 2,
          title: "Frontend development",
@@ -22,7 +22,7 @@ export class ServiceFakeData implements IFakeData<ServiceEntity> {
 
      };
 
-      private backendDevelopment: ServiceEntity = {
+      public backendDevelopment: ServiceEntity = {
          id: uuidv4(),
          order: 3,
          title: "Backend development",
@@ -31,7 +31,7 @@ export class ServiceFakeData implements IFakeData<ServiceEntity> {
 
      };
 
-     private androidNatveDevelopment: ServiceEntity = {
+     public androidNatveDevelopment: ServiceEntity = {
          id: uuidv4(),
          order: 4,
          title: "Android Native development",
@@ -40,7 +40,7 @@ export class ServiceFakeData implements IFakeData<ServiceEntity> {
 
      };
 
-     private flutterDevelopment: ServiceEntity = {
+     public flutterDevelopment: ServiceEntity = {
          id: uuidv4(),
          order: 5,
          title: "Flutter development",

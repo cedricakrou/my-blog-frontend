@@ -1,10 +1,11 @@
+import { IEntity } from "./IEntity";
+
 /**
  * Entitie domain of Menu.
  * 
  * KAKOU Akrou Cedric
  */
-export interface Menu{
-    id: string;
+export interface Menu extends IEntity{
     label: string;
     description: string;
     order: number;

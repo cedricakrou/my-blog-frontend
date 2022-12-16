@@ -1,10 +1,11 @@
+import { IEntity } from "./IEntity";
+
 /**
  * Entitie domain of File.
  * 
  * KAKOU Akrou Cedric
  */
-export class File{
-    id: string | undefined;
-    name: string = "";
-    file: string = "";
+export interface File extends IEntity{
+    name: string;
+    file: string;
 }

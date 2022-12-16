@@ -1,4 +1,5 @@
 import { Skill } from "../valueobjects/skill.value-object";
+import { IEntity } from "./IEntity";
 import { User } from "./user.entities";
 
 /**
@@ -6,12 +7,11 @@ import { User } from "./user.entities";
  * 
  * KAKOU Akrou Cedric
  */
-export class Post{
-    id: string | undefined;
-    content: string = "";
-    date: Date | undefined;
-    metadatas: Skill[] = [];
-    comments: Post[] = [];
-    likes: User[] = [];
-    shares: User[] = [];
+export interface Post extends IEntity{
+    content: string;
+    date: Date;
+    metadatas: Skill[];
+    comments: Post[];
+    likes: User[];
+    shares: User[];
 }
