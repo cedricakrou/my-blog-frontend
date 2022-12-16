@@ -1,7 +1,7 @@
 <div id="experiences-section">
     <a id="experience-id"></a>
-    <p id="experiences-section-title">Qu'est-ce que je peux faire</p>
-    <p id="experiences-section-subtitle">Offres de experiences</p>
+    <p id="experiences-section-title">Où j'ai travaillé</p>
+    <p id="experiences-section-subtitle"></p>
     <hr class="experiences-section-divider" />
 
 
@@ -11,11 +11,30 @@
         </div>
         <div class="row">
             
-            <img class="col-sm-12 col-md-12 col-lg-4 col-xl-4 experiences-item-image" [src]=" 'presentation/assets/experiences/' + experience.companyImageUrl" [alt]="experience.title" />
+            <img class="col-sm-12 col-md-12 col-lg-3 col-xl-3 experiences-item-image" [src]=" 'presentation/assets/experiences/' + experience.companyImageUrl" [alt]="experience.companyName" />
     
-            <p class="col-sm-12 col-md-12 col-lg-8 col-xl-8 experiences-item-content">
-                {{experience.description}}
-            </p>
+            <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9 experiences-item-content">
+                <div>
+                    <span>{{experience.title}}</span>
+                    <span id="experiences-content-job-spacer">@</span>
+                    <span>
+                        <a id="experiences-content-job-title" [href]="experience.companyLink" target="_blank">{{experience.companyName}}</a>
+                    </span>
+                </div>
+
+                <div id="experience-date-section">
+                    <span>{{experience.startDate}}</span>
+                    <span class="spacer-date">-</span>
+                    <span *ngIf="experience.isCurrentlyWorking">Present</span>
+                    <span *ngIf="!experience.isCurrentlyWorking">{{experience.startEnd}}</span>
+                </div>
+
+                <ul class="experience-tasks-section">
+                    <li class="experience-tasks-item" *ngFor="let task of experience.tasks">
+                        {{task.text}}
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

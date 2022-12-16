@@ -1,5 +1,6 @@
 import { Skill } from "../valueobjects/skill.value-object";
 import { EmploymentType } from "../valueobjects/employment-type.value-object";
+import { Task } from "../valueobjects/task.value-object";
 
 /**
  * Entitie domain of Experience.
@@ -16,8 +17,9 @@ export interface Experience{
     companyLink: string;
     companyImageUrl: string;
     location: string;
-    startDate: Date;
-    startEnd: Date;
+    startDate: string;
+    startEnd: string;
     isCurrentlyWorking: boolean;
     skills: Skill[];
+    tasks: Task[];
 }
