@@ -1,10 +1,11 @@
+import { IEntity } from "./IEntity";
+
 /**
  * Entitie domain of Social Media.
  * 
  * KAKOU Akrou Cedric
  */
-export interface SocialMedia{
-    id: string | undefined;
+export interface SocialMedia extends IEntity{
     label: string;
     link: string;
     isActive: boolean;
