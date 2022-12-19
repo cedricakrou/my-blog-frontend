@@ -27,4 +27,5 @@ export interface User extends IEntity{
     workDescription: string;
     currentJob: Experience;
     works: WorkEntity[];
+    cvLink: string;
 }

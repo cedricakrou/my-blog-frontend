@@ -1,0 +1,24 @@
+.btn-resume-download{
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    text-decoration-line: var(--accent-color);
+    border-width: 1px;
+    border-color: var(--accent-color);
+    border-style: solid;
+    border-radius: 10px 5px ;
+    padding: 35px;
+    font-size: 25px;
+}
+
+
+.btn-resume-download:hover{
+    background-color: rgba(100,255,218,0.1);
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
