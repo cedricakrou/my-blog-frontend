@@ -45,7 +45,8 @@ export class UserRepositoryMock implements UserRepository{
             services: new ServiceFakeData().datas(),
             briefDescription: "Passioné de développement d'applications 💻 et Formula Ona (F1) Addicte 🏎️.",
             workDescription: "Je suis un ingénieur génie logiciel specialisé dans la conception et la création de solutions (Web & Mobile) digitales.",
-            works: new WorkFakeData().datas()
+            works: new WorkFakeData().datas(),
+            cvLink: "CV_KAKOU_AKROU_CEDRIC.pdf"
         };
 
         return of(user);
