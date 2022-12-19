@@ -9,6 +9,7 @@ import { ExperienceFakeData } from "./fake.data/experience.fake-data";
 import { MenuFakeData } from "./fake.data/menu.fake-data";
 import { ServiceFakeData } from "./fake.data/service.fake-data";
 import { SocialMediaFakeData } from "./fake.data/social-media.fake-data";
+import { WorkFakeData } from "./fake.data/work.fake-data";
 
 @Injectable({
     providedIn: 'root',
@@ -43,7 +44,8 @@ export class UserRepositoryMock implements UserRepository{
             currentJob: new ExperienceFakeData().cinetpay,
             services: new ServiceFakeData().datas(),
             briefDescription: "Passioné de développement d'applications 💻 et Formula Ona (F1) Addicte 🏎️.",
-            workDescription: "Je suis un ingénieur génie logiciel specialisé dans la conception et la création de solutions (Web & Mobile) digitales."
+            workDescription: "Je suis un ingénieur génie logiciel specialisé dans la conception et la création de solutions (Web & Mobile) digitales.",
+            works: new WorkFakeData().datas()
         };
 
         return of(user);

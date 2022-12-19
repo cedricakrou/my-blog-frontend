@@ -5,6 +5,7 @@ import { IEntity } from "./IEntity";
 import { Menu } from "./menu.entities";
 import { ServiceEntity } from "./service.entities";
 import { SocialMedia } from "./social-media.entities";
+import { WorkEntity } from "./work.entities";
 
 /**
  * Entity domain of User.
@@ -25,4 +26,5 @@ export interface User extends IEntity{
     briefDescription: string;
     workDescription: string;
     currentJob: Experience;
+    works: WorkEntity[];
 }

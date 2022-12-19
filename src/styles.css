@@ -9,3 +9,24 @@
     --body-color: var(--primary-color);
     --body-font-family: 'Courier New', Courier, monospace;
 }
+
+.skill-section{
+    margin-top: 0.4%;
+}
+
+.skill-label{
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.skill-content{
+    margin-right: 2%;
+}
+
+.skill-content::before{
+    content: "•";
+    position: relative;
+    right: 2px;
+    color: var(--accent-color);
+    margin-left: 2%;
+}

@@ -17,6 +17,7 @@ import { RouteNameHelper } from "./route-name.helper";
 
 
 const routes: Routes = [
+    {path: '', component: AboutMeComponent},
     {path: RouteNameHelper.aboutMe, component: AboutMeComponent},
     {path: RouteNameHelper.experiences, component: ExperiencesComponent},
     {path: RouteNameHelper.works, component: WorksComponent},
