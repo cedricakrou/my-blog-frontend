@@ -1,0 +1,31 @@
+
+
+<div id="works-section">
+    <a id="work-id"></a>
+    <p id="works-section-title">Ce que j'ai construit</p>
+    <p id="works-section-subtitle"></p>
+    <hr class="works-section-divider" />
+
+<div class="row" id="works-item-block">
+    <div class="works-item-section col-sm-12 col-md-6 col-lg-6 col-xl-4" *ngFor="let work of user.works">
+        <div class="works-item-header">
+            <span class="works-item-header-content">{{work.title}}</span>
+        </div>
+        <div class="row">
+            
+            <img class="col-sm-12 col-md-12 col-lg-12 col-xl-12 works-item-image" [src]=" 'presentation/assets/works/' + work.images[0]" [alt]="work.title" />
+    
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 works-item-content">
+                <p>
+                    {{work.description}}
+                </p>
+
+                <div class="skill-section">
+                    <span class="skill-label">Skills:</span>
+                    <span class="skill-content" *ngFor="let skill of work.skills">{{skill.label}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

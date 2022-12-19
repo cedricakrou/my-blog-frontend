@@ -9,7 +9,7 @@ export class WorkFakeData implements IFakeData<WorkEntity>{
         id: uuidv4(),
         title: "Djepay",
         description: "Developers can show information here about how their app collects and uses your data",
-        images: [],
+        images: ["djepay-1.png"],
         skills: [{
             id: uuidv4(),
             label : "Flutter",
@@ -28,7 +28,7 @@ export class WorkFakeData implements IFakeData<WorkEntity>{
         id: uuidv4(),
         title: "Resistore",
         description: "Developers can show information here about how their app collects and uses your data",
-        images: [],
+        images: ["resistore-1.jpg"],
         skills: [{
             id: uuidv4(),
             label : "Android Native"
@@ -45,7 +45,7 @@ export class WorkFakeData implements IFakeData<WorkEntity>{
         id: uuidv4(),
         title: "Money Alert SSE",
         description: "Developers can show information here about how their app collects and uses your data",
-        images: [],
+        images: ["money-alert-1.png"],
         skills: [{
             id: uuidv4(),
             label : "Android Native"

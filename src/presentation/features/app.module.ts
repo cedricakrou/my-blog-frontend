@@ -4,12 +4,14 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ResumeComponent } from './resume/resume.component';
 import { WorksComponent } from './works/works.component';
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MenuComponent } from './common/menu/menu.component';
 import { SocialMediaComponent } from './common/social.media/social-media.component';
 import { SocialMediaButton } from '../libs/button/social-media/social-media.button';
 import { AppRoutingModule } from './common/routing/app-routing.module';
+import { Router, RouterModule } from '@angular/router';
+import { RouteNameHelper } from './common/routing/route-name.helper';
 
 @NgModule({
   declarations: [
@@ -25,8 +27,8 @@ import { AppRoutingModule } from './common/routing/app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule{}

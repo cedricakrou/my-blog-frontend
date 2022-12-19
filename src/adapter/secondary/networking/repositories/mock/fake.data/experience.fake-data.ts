@@ -16,7 +16,26 @@ export class ExperienceFakeData implements IFakeData<Experience>{
         startDate: "Mars 2022",
         startEnd: "",
         isCurrentlyWorking: true,
-        skills: [],
+        skills: [{
+            id: uuidv4(),
+            label: "Java"
+        },
+        {
+            id: uuidv4(),
+            label: "Kotlin"
+        },
+        {
+            id: uuidv4(),
+            label: "Microservices"
+        },
+        {
+            id: uuidv4(),
+            label: "DDD"
+        },
+        {
+            id: uuidv4(),
+            label: "TDD"
+        }],
         tasks: [
             {
                 text: "Write modern, performant, maintainable code for a diverse array of client and internal projects"
@@ -46,7 +65,26 @@ export class ExperienceFakeData implements IFakeData<Experience>{
         startDate: "Novembre 2019",
         startEnd: "Mars 2022",
         isCurrentlyWorking: false,
-        skills: [],
+        skills: [{
+            id: uuidv4(),
+            label: "Java"
+        },
+        {
+            id: uuidv4(),
+            label: "Kotlin"
+        },
+        {
+            id: uuidv4(),
+            label: "Microservices"
+        },
+        {
+            id: uuidv4(),
+            label: "DDD"
+        },
+        {
+            id: uuidv4(),
+            label: "TDD"
+        }],
         tasks: [
             {
                 text: "Write modern, performant, maintainable code for a diverse array of client and internal projects"
@@ -76,7 +114,26 @@ export class ExperienceFakeData implements IFakeData<Experience>{
         startDate: "Fevrier 2019",
         startEnd: "Septembre 2019",
         isCurrentlyWorking: false,
-        skills: [],
+        skills: [{
+            id: uuidv4(),
+            label: "Java"
+        },
+        {
+            id: uuidv4(),
+            label: "Kotlin"
+        },
+        {
+            id: uuidv4(),
+            label: "Microservices"
+        },
+        {
+            id: uuidv4(),
+            label: "DDD"
+        },
+        {
+            id: uuidv4(),
+            label: "TDD"
+        }],
         tasks: [
             {
                 text: "Write modern, performant, maintainable code for a diverse array of client and internal projects"
@@ -106,7 +163,18 @@ export class ExperienceFakeData implements IFakeData<Experience>{
         startDate: "Avril 2017",
         startEnd: "Septembre 2017",
         isCurrentlyWorking: false,
-        skills: [],
+        skills: [{
+            id: uuidv4(),
+            label: "Java"
+        },
+        {
+            id: uuidv4(),
+            label: "Kotlin"
+        },
+        {
+            id: uuidv4(),
+            label: "Microservices"
+        }],
         tasks: [
             {
                 text: "Write modern, performant, maintainable code for a diverse array of client and internal projects"
