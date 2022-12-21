@@ -69,33 +69,12 @@
         </form>
 
         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 contacts-item-container">
-            <div class="contacts-item-section">
-                <p class="contact-item-header">
-                    Email
-                </p>
-                <a class="contact-item-content" href="cedricakrou@gmail.com">belmondok</a>
-            </div>
-
-            <div class="contacts-item-section">
-                <p class="contact-item-header">
-                    Github
-                </p>
-                <a class="contact-item-content" href="cedricakrou@gmail.com">belmondok</a>
-            </div>
             
-
-            <div class="contacts-item-section">
-                <p class="contact-item-header">
-                    Twitter
+            <div class="contacts-item-section" *ngFor="let socialMedia of user.socialMedias">
+                <p class="contact-item-header" *ngIf="socialMedia.isActive">
+                    {{socialMedia.label}}
                 </p>
-                <a class="contact-item-content" href="cedricakrou@gmail.com">belmondok</a>
-            </div>
-
-            <div class="contacts-item-section">
-                <p class="contact-item-header">
-                    Instagram
-                </p>
-                <a class="contact-item-content" href="cedricakrou@gmail.com">belmondok</a>
+                <a class="contact-item-content" [href]="socialMedia.link" target="_blank">{{socialMedia.content}}</a>
             </div>
 
         </div>
