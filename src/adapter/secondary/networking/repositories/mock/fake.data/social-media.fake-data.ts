@@ -6,6 +6,7 @@ export class SocialMediaFakeData implements IFakeData<SocialMedia> {
     private github : SocialMedia = {
         id: "123",
         label: "Github",
+        content: "cedricakrou",
         link: "https://github.com/cedricakrou",
         isActive: true,
         imageUrl: "feather feather-github",
@@ -16,6 +17,7 @@ export class SocialMediaFakeData implements IFakeData<SocialMedia> {
     private linkedIn : SocialMedia = {
         id: "123",
         label: "LinkedIn",
+        content: "KAKOU AKrou Cedric",
         link: "https://www.linkedin.com/in/kakou-akrou-cedric-052338162/",
         isActive: true,
         imageUrl: "feather feather-linkedin",
@@ -26,6 +28,7 @@ export class SocialMediaFakeData implements IFakeData<SocialMedia> {
    private instagram : SocialMedia = {
         id: "123",
         label: "Instagram",
+        content: "Belmomdok",
         link: "https://www.instagram.com/belmondok/",
         isActive: true,
         imageUrl: "instagram.png",
@@ -35,6 +38,7 @@ export class SocialMediaFakeData implements IFakeData<SocialMedia> {
     private twitter : SocialMedia = {
         id: "123",
         label: "Twitter",
+        content: "cedricakrou02",
         link: "https://twitter.com/cedricakrou2",
         isActive: true,
         imageUrl: "twitter.png",
