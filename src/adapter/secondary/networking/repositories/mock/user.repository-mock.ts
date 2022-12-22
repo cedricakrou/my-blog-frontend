@@ -35,7 +35,7 @@ export class UserRepositoryMock implements UserRepository{
             firstname : "Akrou Cedric",
             lastname: "KAKOU",
             email: "cedricakroustudy@gmail.com",
-            phone: ["+2250709882886", "+22540746469"],
+            phones: ["+2250709882886", "+22540746469"],
             address: address,
             role: role,
             menus: new MenuFakeData().datas(),
