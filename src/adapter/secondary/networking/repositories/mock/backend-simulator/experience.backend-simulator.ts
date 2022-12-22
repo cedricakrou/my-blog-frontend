@@ -1,8 +1,8 @@
 import { Experience } from "src/core/domain/entities/experience.entities";
-import { IFakeData } from "./fake-data";
+import { ISimulator } from "./simulator";
 import { v4 as uuidv4 } from 'uuid';
 
-export class ExperienceFakeData implements IFakeData<Experience>{
+export class ExperienceSimulator implements ISimulator<Experience>{
 
     public cinetpay : Experience = {
         id: uuidv4(),
@@ -193,7 +193,7 @@ export class ExperienceFakeData implements IFakeData<Experience>{
     };
 
     public datas(): Experience[] {
-        
+
         return [
             this.cinetpay,
             this.b2i,
