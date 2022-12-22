@@ -1,18 +1,18 @@
 import { ServiceEntity } from "src/core/domain/entities/service.entities";
 import { v4 as uuidv4 } from 'uuid';
-import { IFakeData } from "./fake-data";
+import { ISimulator } from "./simulator";
 
-export class ServiceFakeData implements IFakeData<ServiceEntity> {
-    
+export class ServiceSimulator implements ISimulator<ServiceEntity> {
+
     public softwareArchitecture: ServiceEntity = {
         id: uuidv4(),
         order: 1,
         title: "Software Architecture",
         imageUrl: "architecture.png",
         description: "Créez des applications côté client avec des fonctionnalités modernes telles que SPA et maintenez un style de codage sémantique parmi d'autres bonnes pratiques pour l'optimisation du référencement. Utilisez des technologies modernes telles que Nuxt (Vue.js), TailwindCSS et GSAP.",
-     
+
      };
-     
+
      public frontEndDevelopment: ServiceEntity = {
          id: uuidv4(),
          order: 2,

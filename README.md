@@ -6,11 +6,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code Architecture
 
 This application was built in the [Clean Architecture](https://www.codeguru.com/csharp/understanding-onion-architecture/) and multiples components.
+
+> All the information displayed on every page is configurable through this project in the section [Backend-simulator](https://github.com/cedricakrou/my-blog-frontend/tree/main/src/adapter/secondary/networking/repositories/mock/fake.data).
 
 ## Structure of files
 
@@ -18,7 +20,7 @@ This application was built in the [Clean Architecture](https://www.codeguru.com/
 
 ## Screnshots
 
-In below you will see some screenshots of the application
+Below are some screenshots of the application.
 
 ![Home](documentation/screenshots/home.png "Home")
 

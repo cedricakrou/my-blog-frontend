@@ -1,11 +1,11 @@
 import { Menu } from "src/core/domain/entities/menu.entities";
 import { RouteNameHelper } from "src/presentation/features/common/routing/route-name.helper";
 import { v4 as uuidv4 } from 'uuid';
-import { IFakeData } from "./fake-data";
+import { ISimulator } from "./simulator";
 
-export class MenuFakeData implements IFakeData<Menu>{
+export class MenuSimulator implements ISimulator<Menu>{
 
-    private aboutMe: Menu = 
+    private aboutMe: Menu =
     {
         id: uuidv4(),
         label: "About Me",

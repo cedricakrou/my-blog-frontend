@@ -5,17 +5,17 @@ import { User } from "src/core/domain/entities/user.entities";
 import { Address } from "src/core/domain/valueobjects/address.value-object";
 import { Role } from "src/core/domain/valueobjects/role.value-object";
 import { v4 as uuidv4 } from 'uuid';
-import { ExperienceFakeData } from "./fake.data/experience.fake-data";
-import { MenuFakeData } from "./fake.data/menu.fake-data";
-import { ServiceFakeData } from "./fake.data/service.fake-data";
-import { SocialMediaFakeData } from "./fake.data/social-media.fake-data";
-import { WorkFakeData } from "./fake.data/work.fake-data";
+import { ExperienceSimulator } from "./backend-simulator/experience.backend-simulator";
+import { MenuSimulator } from "./backend-simulator/menu.backend-simulator";
+import { ServiceSimulator } from "./backend-simulator/service.backend-simulator";
+import { SocialMediaSimulator } from "./backend-simulator/social-media.backend-simulator";
+import { WorkSimulator } from "./backend-simulator/work.backend-simulator";
 
 @Injectable({
     providedIn: 'root',
 })
 export class UserRepositoryMock implements UserRepository{
-    
+
     signIn(username: string, password: string): Observable<User> {
 
         const address: Address = {
@@ -29,7 +29,7 @@ export class UserRepositoryMock implements UserRepository{
             label: "ADMIN",
             permissions: []
         };
-        
+
         const user: User = {
             id: uuidv4(),
             firstname : "Akrou Cedric",
@@ -38,14 +38,14 @@ export class UserRepositoryMock implements UserRepository{
             phones: ["+2250709882886", "+22540746469"],
             address: address,
             role: role,
-            menus: new MenuFakeData().datas(),
-            socialMedias: new SocialMediaFakeData().datas(),
-            experiences: new ExperienceFakeData().datas(),
-            currentJob: new ExperienceFakeData().cinetpay,
-            services: new ServiceFakeData().datas(),
+            menus: new MenuSimulator().datas(),
+            socialMedias: new SocialMediaSimulator().datas(),
+            experiences: new ExperienceSimulator().datas(),
+            currentJob: new ExperienceSimulator().cinetpay,
+            services: new ServiceSimulator().datas(),
             briefDescription: "Passioné de développement d'applications 💻 et Formula Ona (F1) Addicte 🏎️.",
             workDescription: "Je suis un ingénieur génie logiciel specialisé dans la conception et la création de solutions (Web & Mobile) digitales.",
-            works: new WorkFakeData().datas(),
+            works: new WorkSimulator().datas(),
             cvLink: "CV_KAKOU_AKROU_CEDRIC.pdf"
         };
 

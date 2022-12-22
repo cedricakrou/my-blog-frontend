@@ -1,10 +1,10 @@
 import { WorkEntity } from "src/core/domain/entities/work.entities";
-import { IFakeData } from "./fake-data";
+import { ISimulator } from "./simulator";
 import { v4 as uuidv4 } from "uuid";
-import { ServiceFakeData } from "./service.fake-data";
+import { ServiceSimulator } from "./service.backend-simulator";
 
-export class WorkFakeData implements IFakeData<WorkEntity>{
-    
+export class WorkSimulator implements ISimulator<WorkEntity>{
+
     private dejpay: WorkEntity = {
         id: uuidv4(),
         title: "Djepay",
@@ -21,7 +21,7 @@ export class WorkFakeData implements IFakeData<WorkEntity>{
 
         },
     ],
-        service: new ServiceFakeData().flutterDevelopment
+        service: new ServiceSimulator().flutterDevelopment
     };
 
     private resistore: WorkEntity = {
@@ -38,7 +38,7 @@ export class WorkFakeData implements IFakeData<WorkEntity>{
             label : "Php"
         }
     ],
-        service: new ServiceFakeData().androidNatveDevelopment
+        service: new ServiceSimulator().androidNatveDevelopment
     };
 
     private moneyAlert: WorkEntity = {
@@ -51,11 +51,11 @@ export class WorkFakeData implements IFakeData<WorkEntity>{
             label : "Android Native"
         }
     ],
-        service: new ServiceFakeData().androidNatveDevelopment
+        service: new ServiceSimulator().androidNatveDevelopment
     };
 
     public datas(): WorkEntity[] {
-        
+
         return [
             this.dejpay,
             this.resistore,
