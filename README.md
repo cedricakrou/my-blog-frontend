@@ -12,7 +12,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This application was built in the [Clean Architecture](https://www.codeguru.com/csharp/understanding-onion-architecture/) and multiples components.
 
-> All the information displayed on every page is configurable through this project in the section [Backend-simulator](https://github.com/cedricakrou/my-blog-frontend/tree/main/src/adapter/secondary/networking/repositories/mock/fake.data).
+> All the information displayed on every page is configurable through this project in the section [Backend-simulator](https://github.com/cedricakrou/my-blog-frontend/tree/main/src/adapter/secondary/networking/repositories/mock/backend-simulator).
 
 ## Structure of files
 
