@@ -16,7 +16,7 @@ export interface User extends IEntity{
     firstname: string;
     lastname: string;
     email: string;
-    phone: string[];
+    phones: string[];
     address: Address;
     role: Role;
     menus: Menu[];

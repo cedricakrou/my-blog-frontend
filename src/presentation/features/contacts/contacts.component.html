@@ -1,7 +1,7 @@
 <div id="contacts-section">
     <a id="experience-id"></a>
     <p id="contacts-section-title">Comment me contacter</p>
-    <p id="contacts-section-subtitle"></p>
+    <p id="contacts-section-subtitle">Une question ou un commentaire ? Utilisez les coordonnées ci-dessous pour nous contacter :</p>
     <hr class="contacts-section-divider" />
 
     <div class="row contacts-container">
@@ -77,6 +77,12 @@
                 <a class="contact-item-content" [href]="socialMedia.link" target="_blank">{{socialMedia.content}}</a>
             </div>
 
+            <p class="contact-item-header">
+                Numéro de téléphone
+            </p>
+            <div class="contacts-item-section" *ngFor="let phone of user.phones">
+                <a class="contact-item-content" [href]=" 'tel:' + phone" target="_blank">{{phone}}</a>
+            </div>
         </div>
     </div>
 </div>
