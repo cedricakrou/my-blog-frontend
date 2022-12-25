@@ -1,12 +1,14 @@
 pipeline {
 
+  agent any
+
   tools {nodejs "NODEJS"}
 
   stages {
     stage('Install') {
       steps { sh 'npm install' }
     }
- 
+
     stage('Test') {
       parallel {
         stage('Static code analysis') {
@@ -17,7 +19,7 @@ pipeline {
         }
       }
     }
- 
+
     stage('Build') {
       steps { sh 'npm run-script build' }
     }
