@@ -12,7 +12,7 @@ export class ExperiencesComponent implements OnInit {
     user!: User;
 
     ngOnInit(): void {
-        this.user = SharedPreferences.user;;
+        this.user = SharedPreferences.user;
     }
 
 }
